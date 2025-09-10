@@ -1,0 +1,21 @@
+{
+    "name": "Flutter Dev Container",
+    // This tells Codespaces to use a pre-built image that has Flutter and the Android SDK.
+    "image": "rockcm/flutter-devcontainer:3.13.4",
+
+    // Forward the port Flutter uses for web development.
+    "forwardPorts": [8080],
+
+    // Keep the container running after it's created.
+    "runArgs": ["--detach"],
+
+    // This adds helpful VS Code extensions to your cloud editor.
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Dart-Code.flutter",
+                "Dart-Code.dart-code"
+            ]
+        }
+    }
+}
